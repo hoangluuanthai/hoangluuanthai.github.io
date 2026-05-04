@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thai Hoang - Contact Info</title>
+    <title>Hoang Luu An Thai - Contact & Portfolio</title>
     <style>
         :root {
-            --primary-color: #003366; /* Màu xanh Bách Khoa chuyên nghiệp */
+            --primary-color: #003366;
             --bg-color: #f8f9fa;
             --text-color: #212529;
-            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
+        
+        /* Lệnh này cực kỳ quan trọng để căn giữa text và nút chuẩn xác 100% */
+        * { box-sizing: border-box; }
+
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             display: flex;
@@ -25,81 +29,81 @@
         }
         .container {
             background: white;
-            padding: 40px 30px;
+            padding: 45px 35px;
             border-radius: 16px;
             box-shadow: var(--shadow);
             text-align: center;
             width: 100%;
-            max-width: 350px;
+            max-width: 380px;
             border-top: 6px solid var(--primary-color);
         }
         h1 {
             font-size: 22px;
             margin: 0 0 10px 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             color: var(--primary-color);
         }
         p {
             font-size: 14px;
-            color: #6c757d;
-            margin-bottom: 30px;
+            color: #555;
+            margin-bottom: 35px;
             line-height: 1.6;
         }
         .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            display: block; /* Đổi sang block để text căn giữa tuyệt đối */
             width: 100%;
-            padding: 12px;
-            margin-bottom: 12px;
+            padding: 14px;
+            margin-bottom: 15px;
             text-decoration: none;
             color: white;
-            background-color: #333;
             border-radius: 8px;
             font-weight: 600;
             font-size: 15px;
-            transition: transform 0.2s, opacity 0.2s;
+            text-align: center; /* Căn giữa text trong nút */
+            transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
         }
         .btn:hover {
             transform: translateY(-2px);
-            opacity: 0.9;
+            opacity: 0.95;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
-        /* Màu sắc riêng cho từng nền tảng */
+        
         .github { background-color: #24292e; }
         .linkedin { background-color: #0077b5; }
         .gmail { background-color: #d44638; }
 
         .footer {
-            margin-top: 20px;
-            font-size: 11px;
-            color: #adb5bd;
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Thai Hoang</h1>
-        <p>Electrical & Electronics Engineering Student<br>Ho Chi Minh City University of Technology</p>
+        <!-- Đã cập nhật Tên -->
+        <h1>Hoang Luu An Thai</h1>
+        
+        <!-- Đã thêm (HCMUT) -->
+        <p>Electrical & Electronics Engineering Student<br>Ho Chi Minh City University of Technology (HCMUT)</p>
 
-        <!-- Nút GitHub -->
         <a href="https://github.com/hoangluuanthai" class="btn github" target="_blank">
-            <span>GitHub Profile</span>
+            GitHub Profile
         </a>
 
-        <!-- Nút LinkedIn -->
         <a href="https://www.linkedin.com/in/hoangluuanthai" class="btn linkedin" target="_blank">
-            <span>Connect on LinkedIn</span>
+            Connect on LinkedIn
         </a>
 
-        <!-- Nút Gmail -->
         <a href="mailto:hoangluuanthai.work@gmail.com" class="btn gmail">
-            <span>Send an Email</span>
+            Send an Email
         </a>
 
-        <div class="footer">Scan to connect • 2026</div>
+        <!-- Đã thay đổi dòng Footer chuyên nghiệp hơn -->
+        <div class="footer">Engineering Portfolio & Professional Contacts</div>
     </div>
 
 </body>
